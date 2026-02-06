@@ -17,21 +17,29 @@ val newSolarSystem = arrayOf(
 )
 
 fun main() {
-    val solarSystem = mutableListOf("Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune")
+    val solarSystem = mutableSetOf("Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune")
     println(solarSystem.size)
     solarSystem.add("Pluto")
-    solarSystem.add(3, "Theia")
-    solarSystem[3] = "Future Moon"
-    solarSystem.removeAt(9)
     println(solarSystem.contains("Pluto"))
-    solarSystem.remove("Future Moon")
     println("Pluto" in solarSystem)
-    println(solarSystem[2])
-    println(solarSystem.get(3))
-    println(solarSystem.indexOf("Earth"))
-    println(solarSystem.indexOf("Pluto"))
-
-    for (planet in solarSystem){
-        println(planet)
-    }
+    solarSystem.add("Pluto")
+    println(solarSystem.size)
+    solarSystem.remove("Pluto")
+    println(solarSystem.size)
+    println(solarSystem.contains("Pluto"))
+//    solarSystem.add("Pluto")
+//    solarSystem.add(3, "Theia")
+//    solarSystem[3] = "Future Moon"
+//    solarSystem.removeAt(9)
+//    println(solarSystem.contains("Pluto"))
+//    solarSystem.remove("Future Moon")
+//    println("Pluto" in solarSystem)
+//    println(solarSystem[2])
+//    println(solarSystem.get(3))
+//    println(solarSystem.indexOf("Earth"))
+//    println(solarSystem.indexOf("Pluto"))
+//
+//    for (planet in solarSystem){
+//        println(planet)
+//    }
 }
